@@ -52,7 +52,7 @@ function Experience() {
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
     >
       <h1 className="text-3xl font-bold mb-5 text-blue-800">Experience</h1>
-      <div className="flex justify-center gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {cardItem.map(({ id, logo, name }) => (
           <div
             key={id}
@@ -62,7 +62,7 @@ function Experience() {
             <img
               src={logo}
               className="w-[60px] h-[60px] rounded-full mb-2"
-              alt=""
+              alt={name}
             />
             <div className="text-center">{name}</div>
           </div>
